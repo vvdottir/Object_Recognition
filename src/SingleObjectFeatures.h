@@ -1,28 +1,33 @@
 /*
  * SingleObjectFeatures.h
  *
- *  Created on: Aug 25, 2014
+ *  Created on: Aug 20, 2014
  *      Author: adria2
  */
 
 #ifndef SINGLEOBJECTFEATURES_H_
 #define SINGLEOBJECTFEATURES_H_
 
-#include<iostream>
-#include"Object.h"
-
-
 using namespace std;
 
-class SingleObjectfeature{
+class SingleObjectFeatures{
+
+public:
+	void setVolume(float);
+	void setDiagonal(float);
+
+	float getVolume() {return volumeSize;}
+	float getDiagonal() {return diagonalSize;}
+
 
 private:
-void calculateVolume(Object &);
-void caluclateDiagonal(Object &);
-public:
+
+	float volumeSize;
+	float diagonalSize;
 
 
 };
+
 
 
 #endif /* SINGLEOBJECTFEATURES_H_ */

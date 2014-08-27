@@ -205,14 +205,14 @@ vector<pcl::PointXYZ> xmlparser::convertObjectParameters(){
  // // myBoundingBox.push_back(_FLDPoint);
 
   vector<pcl::PointXYZ> out;
-  out.push_back(_FLDPoint);
-  out.push_back(_FRDPoint);
-  out.push_back(_BLDPoint);
-  out.push_back(_BRDPoint);
-  out.push_back(_FLUPoint);
-  out.push_back(_FRUPoint);
-  out.push_back(_BLUPoint);
-  out.push_back(_BRUPoint);
+  out.push_back(_FLDPoint); //0
+  out.push_back(_FRDPoint); //1
+  out.push_back(_BLDPoint); //2
+  out.push_back(_BRDPoint); //3
+  out.push_back(_FLUPoint); //4
+  out.push_back(_FRUPoint); //5
+  out.push_back(_BLUPoint); //6
+  out.push_back(_BRUPoint); //7
 
 
   return out;
